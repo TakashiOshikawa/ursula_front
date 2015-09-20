@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css"  href="./css/bootstrap.min.css" >
+    <link href="./css/bootstrap-theme.min.css">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <script src="./js/jquery-1.10.2.min.js" type="application/javascript" ></script>
+    <script src="./js/bootstrap.min.js" type="application/javascript" ></script>
+    <script src="./js/form.js" type="application/javascript"></script>
+
+</head>
+
+<body>
+
+  <!-- Navbar start -->
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="../" class="navbar-brand">Ursulla</a>
+      </div>
+
+      <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="" class="font20">/</a>
+            </li>
+            <li>
+              <form action="" method="GET" class="navbar-form navbar-left" name="frm" id="frm" role="search" >
+                <div class="form-group">
+                  <input type="text"  class="form-control" id="key" style="width: 300px;" placeholder="key">
+                </div>
+                <button type="button" class="btn btn-default" onclick="postKey()" >check</button>
+              </form>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a>各言語のPOST関数</a>
+            </li>
+          </ul>
+        </div>
+
+    </div>
+  </div>
+  <!-- Navbar end -->
+
+
+  <div class="container" id="main">
+  </div>
+
+
+</body>
+</html>
