@@ -13,11 +13,11 @@ page('*', notfound);
 page();
 
 function key() {
-  window.location.href = 'http://localhost:4000/ursula/debugg.html';
+  window.location.href = 'http://wirebull.co:4000/ursula/debugg.html';
 }
 
 function toppage() {
-  $.get("http://localhost:4000/ursula/top.html", function(data){
+  $.get("http://wirebull.co:4000/ursula/top.html", function(data){
     // alert(data);
     $("#content").append(data);
   });
@@ -25,7 +25,7 @@ function toppage() {
 
 
 function debugg() {
-  $.get("http://localhost:4000/ursula/debugg.html", function(data){
+  $.get("http://wirebull.co:4000/ursula/debugg.html", function(data){
     // alert(data);
     $("#content").append(data);
   });
