@@ -18,6 +18,7 @@ function key() {
 
 function toppage() {
   $.get("http://ursulla.co:4000/ursula/top.html", function(data){
+  window.location.href = 'http://wirebull.co:4000/ursula/debugg.html';
     // alert(data);
     $("#content").append(data);
   });
