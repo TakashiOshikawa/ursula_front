@@ -4,7 +4,7 @@ $(function(){
   var spl = loc.split("/");
   var key = spl[spl.length-1];
   // alert(key);
-  $.get("http://127.0.0.1:8080/" + key, function(data){
+  $.get("http://127.0.0.4:8080/" + key, function(data){
     // alert(data);
     $("#main").append(data);
   });
