@@ -9,6 +9,12 @@ var express = require('express')
 
 var app = express();
 
+app.all('/*', function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  next();
+});
+
 
 // deprecated express methods
 // app.use(express.favicon());
@@ -85,5 +91,5 @@ app.get('/:example/*', function(req, res){
   res.sendFile(join(__dirname, name, 'index.html'));
 });
 
-app.listen(4000);
-console.log('Example server listening on port 4000');
+app.listen(80);
+console.log('Example server listening on port 80');

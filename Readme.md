@@ -35,7 +35,7 @@ page()
     $ cd page.js
     $ npm install
     $ node examples
-    $ open http://localhost:4000
+    $ open http://localhost:80
 
  Currently we have examples for:
 

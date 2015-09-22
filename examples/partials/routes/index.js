@@ -52,10 +52,10 @@
       });
     },
     test: function (ctx, next) {
-      window.location.href = 'http://ursulla.co:4000/partials/test/';
+      window.location.href = 'http://ursulla.co:80/partials/test/';
     },
     examples: function (ctx, next) {
-      window.location.href = 'http://ursulla.co:4000/';
+      window.location.href = 'http://ursulla.co:80/';
     }
   };
 
